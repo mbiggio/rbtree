@@ -35,6 +35,8 @@ int main() {
   printTree(aRbTree);
   aRbTree.remove(40);
   printTree(aRbTree);
+  
+  cout << "is tree empty?: " << aRbTree.empty() << endl;
 
   return 0;
 }

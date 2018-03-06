@@ -130,6 +130,7 @@ template <class T>
 void rbtree<T>::remove(rbnode<T> *node) {  
   if (node->getLeft() == &_null || node->getRight() == &_null) {
     // at least one son is null
+    --_size;
 #ifndef NDEBUG
     std::cout << "remove: one son is null" << std::endl;
 #endif
