@@ -1,3 +1,3 @@
 #!/bin/bash
-rm main *.gch
+rm -f main *.gch
 g++ --std=gnu++11 main.cpp rbnode.hpp rbtree.hpp -o main
